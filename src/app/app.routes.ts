@@ -3,11 +3,13 @@ import { Inicio } from './pages/inicio/inicio';
 import { Libros } from './pages/libros/libros';
 import { Autores } from './pages/autores/autores';
 import { NoEncontrado } from './pages/no-encontrado/no-encontrado';
+import { Detalles } from './pages/detalles/detalles';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: Inicio },
   { path: 'libros', component: Libros },
+  { path: 'libros/:id', component: Detalles },
   { path: 'autores', component: Autores },
   { path: '**', component: NoEncontrado },
 ];

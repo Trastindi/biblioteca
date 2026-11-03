@@ -8,6 +8,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = 'Biblioteca';
+  protected readonly title = 'Biblioteca de Marcos Emilio';
   protected readonly year = new Date().getFullYear();
 }

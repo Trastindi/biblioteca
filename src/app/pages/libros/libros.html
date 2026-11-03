@@ -1,2 +1,8 @@
-<h1>Libros</h1>
-<p>Aquí aparecerá el catálogo de libros.</p>
+<a routerLink="/libros">Todos</a>
+<ul>
+    @for (l of lista(); track l.id) {
+        <li>
+            <a [routerLink]="['/libros', l.id]">{{ l.titulo }}</a>
+        </li>
+    }
+</ul>

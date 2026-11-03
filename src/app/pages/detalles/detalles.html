@@ -1,0 +1,9 @@
+@if (libro(); as l) {
+  <h2>{{ $any(l).titulo }}</h2>
+  <p><strong>Autor:</strong> {{ $any(l).autor }}</p>
+  <p><strong>Género:</strong> {{ $any(l).genero }}</p>
+
+  <button (click)="siguiente($any(l).id)" >Siguiente libro =></button>
+} @else {
+    <p>No existe un libro con ese id</p>
+}

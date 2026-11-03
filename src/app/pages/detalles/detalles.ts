@@ -16,9 +16,9 @@ export class Detalles {
 
   id = input();
   
-  libro = computed(() => {this.servicio.obtenerPorId(Number(this.id()))});
+  libro = computed(() => this.servicio.obtenerPorId(Number(this.id())));
   siguiente(idActual: number) {
     const idSiguiente = this.servicio.idSiguiente(idActual);
-    this.router.navigate(['/detalles', idSiguiente]);
+    this.router.navigate(['/libros', idSiguiente]);
   }
 }

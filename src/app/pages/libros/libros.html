@@ -1,4 +1,8 @@
 <a routerLink="/libros">Todos</a>
+<a routerLink="/libros" [queryParams]="{ tipo: 'Novela' }" >Novelas</a>
+<a routerLink="/libros" [queryParams]="{ tipo: 'Cuento' }" >Cuentos</a>
+<a routerLink="/libros" [queryParams]="{ tipo: 'Poema' }" >Poemas</a>
+
 <ul>
     @for (l of lista(); track l.id) {
         <li>
